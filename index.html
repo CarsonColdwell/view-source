@@ -11,6 +11,7 @@
       background-color: black;
       color: white;
       margin: 40px;
+      overflow-x: hidden;
   }
 
   div {
@@ -20,21 +21,39 @@
     margin-bottom: 30px;
   }
 
-  h1 {
+  .x-wrapper {
+    position: relative;
+    height: 700px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .x-text {
+    position: absolute;
     font-size: 400px;
     letter-spacing: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .piracy {
+    transform: rotate(35deg);
+    color: #ff3333;
+  }
+
+  .stealing {
+    transform: rotate(-35deg);
+    color: #3388ff;
+    mix-blend-mode: screen;
   }
 
   .offset {
     margin-left: 180px;
     transform: rotate(-4deg);
-  }
-
-  h1 span {
-    display: inline-block;
-    transform: rotate(12deg);
   }
   
 </style>
@@ -42,15 +61,14 @@
 </head>
 
 <body>
-<div>INFORMATION</div>
-<div>INFORMATION</div>
-<div>INFORMATION</div>
-  
-  <h1>
-    F<span>R</span>E<span>E</span>
-  </h1>
+  <div>Isn't</div>
 
-  <div class="offset">SHOULD BE</div>
+  <div class="x-wrapper">
+    <h1 class="x-text piracy">PIRACY</h1>
+    <h1 class="x-text stealing">STEALING</h1>
+  </div>
+
+   <div class="offset">Isn't</div>
 
 </body>
 
