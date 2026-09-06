@@ -4,72 +4,82 @@
   <meta charset="utf-8">
   <title>My View Source Project</title>
 
-<style>
-  body {
+  <style>
+    body {
       font-family: Helvetica, Arial, sans-serif;
       background-color: black;
       color: white;
       margin: 40px;
       overflow-x: hidden;
-  }
+    }
 
-  <p class="intro-text">
-   paragraph goes here.
-  </p>
-  
-  .x-wrapper {
-    position: relative;
-    height: 700px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
+    .intro-text {
+      max-width: 900px;
+      margin: 0 auto 50px auto;
+      font-size: 24px;
+      line-height: 1.5;
+      text-align: center;
+    }
 
-  .x-text {
-    position: absolute;
-    font-size: 400px;
-    letter-spacing: 20px;
-    font-weight: bold;
-    margin: 0;
-    white-space: nowrap;
+    .x-wrapper {
+      position: relative;
+      height: 700px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
 
-    left: 50%;
-    top: 50%;
-    transform-origin: center;
-  }
+    .x-text {
+      position: absolute;
+      font-size: 400px;
+      letter-spacing: 20px;
+      font-weight: bold;
+      margin: 0;
+      white-space: nowrap;
 
-  .piracy {
-    transform: translate(-50%, -50%) rotate(35deg);
-    color: #ff3333;
-  }
+      left: 50%;
+      top: 50%;
+      transform-origin: center;
+    }
 
-  .stealing {
-    transform: translate(-50%, -50%) rotate(-35deg);
-    color: #3388ff;
-    mix-blend-mode: screen;
-  }
+    .piracy {
+      transform: translate(-50%, -50%) rotate(35deg);
+      color: #ff3333;
+    }
 
-  .offset {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) rotate(-4deg);
+    .stealing {
+      transform: translate(-50%, -50%) rotate(-35deg);
+      color: #3388ff;
+      mix-blend-mode: screen;
+    }
 
-    font-size: 120px;
-    font-weight: bold;
-    text-align: center;
-    margin: 0;
-  }
+    .offset {
+      position: absolute;
+      left: 50%;
 
-  .top-isnt {
-    top: 20px;
-  }
+      font-size: 120px;
+      font-weight: bold;
+      text-align: center;
+      margin: 0;
 
-  .bottom-isnt {
-    bottom: 20px;
-  }
-</style>
+      transform: translateX(-50%) rotate(-4deg);
+    }
+
+    .top-isnt {
+      top: 50px;
+    }
+
+    .bottom-isnt {
+      bottom: 50px;
+    }
+  </style>
 </head>
 
 <body>
+
+  <p class="intro-text">
+    Your paragraph goes here. This is where you can explain the idea
+    behind the composition or introduce the concept you are presenting.
+  </p>
 
   <div class="x-wrapper">
 
