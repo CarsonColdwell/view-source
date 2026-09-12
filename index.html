@@ -9,9 +9,15 @@
       box-sizing: border-box;
     }
 
+
+
+    html {
+      background-color: black;
+    }
+
     body {
       margin: 0;
-      background-color: white;
+      background-color: black;
       font-family: Helvetica, Arial, sans-serif;
       overflow-x: hidden;
     }
@@ -19,11 +25,11 @@
     .page {
       position: relative;
       min-height: 100vh;
-      margin: 10px;
       background-color: black;
       color: white;
       overflow: hidden;
     }
+
 
     .piracy-container {
       position: absolute;
@@ -65,6 +71,7 @@
     .piracy-row:nth-child(6) {
       color: #700000;
     }
+
 
     .stealing-container {
       position: absolute;
@@ -117,10 +124,10 @@
       color: #0080c0;
     }
 
-    /* Brightest STEALING */
     .stealing-row:nth-child(8) {
       color: #0099ff;
     }
+
 
     .center-content {
       position: absolute;
@@ -138,8 +145,6 @@
     }
 
 
-    /* Top ISN'T */
-
     .isnt {
       margin: 0 0 15px 0;
 
@@ -149,8 +154,6 @@
       text-transform: uppercase;
     }
 
-
-    /* Manifesto paragraph */
 
     .intro-text {
       margin: 0;
@@ -162,8 +165,6 @@
       color: white;
     }
 
-
-    /* Bottom ISN'T */
 
     .bottom-isnt {
       margin-top: 28px;
@@ -177,25 +178,25 @@
 
 
     .bottom-link {
-      position: relative;
-      z-index: 20;
-
       display: block;
       width: fit-content;
 
-      margin: 0 auto;
+      margin: 0 auto 50px auto;
 
-      color: #0099ff;
-
-      font-size: 20px;
+      color: #3388ff;
+      font-size: 28px;
       font-weight: bold;
 
-      text-decoration: underline;
+      text-decoration: none;
+
+      position: relative;
+      z-index: 40;
     }
 
     .bottom-link:hover {
-      color: #ff0000;
+      color: #ff3333;
     }
+
 
     @media (max-width: 1000px) {
 
@@ -220,6 +221,10 @@
       .isnt,
       .bottom-isnt {
         font-size: 38px;
+      }
+
+      .bottom-link {
+        font-size: 24px;
       }
     }
 
@@ -258,7 +263,7 @@
       }
 
       .bottom-link {
-        font-size: 16px;
+        font-size: 20px;
       }
     }
 
@@ -270,6 +275,7 @@
 
   <div class="page">
 
+
     <div class="piracy-container">
 
       <div class="piracy-row">PIRACY</div>
@@ -280,6 +286,7 @@
       <div class="piracy-row">Y</div>
 
     </div>
+
 
     <div class="stealing-container">
 
@@ -293,6 +300,7 @@
       <div class="stealing-row">STEALING</div>
 
     </div>
+
 
     <div class="center-content">
 
@@ -323,7 +331,7 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        LINK
+        Link: noRugrats's Piracy is STILL morally correct, actually.
       </a>
 
     </div>
